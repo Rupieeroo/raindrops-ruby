@@ -1,7 +1,11 @@
 class Factor
 
   def raindrops(int)
-    int.to_s
+    if int == 3
+      'Pling'
+    else
+      int.to_s
+    end
   end
 
   def arr(array)
