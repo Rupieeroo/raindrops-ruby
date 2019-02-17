@@ -14,14 +14,10 @@ class Factor
     end
 
     if arr.empty?
-      int.to_s 
+      int.to_s
     else
       arr.join('').to_s
     end
-  end
-
-  def arr(array)
-    array.join(',').to_s
   end
 
   def factor_find(int)
