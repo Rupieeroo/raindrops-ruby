@@ -1,9 +1,11 @@
 class Factor
 
   def raindrops(int)
+    arr = []
     factors = factor_find(int)
     if factors.include?(7)
-      'Plong'
+    arr << 'Plong'
+    arr.join('').to_s
     else
       int.to_s
     end
