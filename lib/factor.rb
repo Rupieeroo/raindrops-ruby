@@ -5,10 +5,10 @@ class Factor
     factors = factor_find(int)
     if factors.include?(7)
     arr << 'Plong'
-    arr.join('').to_s
     else
-      int.to_s
+      arr << int
     end
+    arr.join('').to_s
   end
 
   def arr(array)
