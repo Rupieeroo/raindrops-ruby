@@ -1,14 +1,23 @@
 class Factor
 
+    RAIN = {
+    3 => 'Pling',
+    5 => 'Plang',
+    7 => 'Plong'
+    }
+
   def raindrops(int)
     arr = []
-    factors = factor_find(int)
-    if factors.include?(7)
-    arr << 'Plong'
-    else
-      arr << int
+
+    RAIN.each do |(num, word)|
+      arr << word if int % num == 0
     end
-    arr.join('').to_s
+
+    if arr.empty?
+      int.to_s 
+    else
+      arr.join('').to_s
+    end
   end
 
   def arr(array)
