@@ -19,8 +19,4 @@ class Factor
       arr.join('').to_s
     end
   end
-
-  def factor_find(int)
-    (1..int).select { |n|int % n == 0}
-  end
 end

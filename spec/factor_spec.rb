@@ -19,14 +19,4 @@ describe '#Factor' do
       expect(@factor.raindrops(30)).to eq('PlingPlang')
     end
   end
-
-  context '#factor_find' do
-    it 'finds the factors of a given number' do
-      expect(@factor.factor_find(34)).to eq([1, 2, 17, 34])
-    end
-
-    it 'finds the factors of a different number' do
-      expect(@factor.factor_find(28)).to eq([1, 2, 4, 7, 14, 28])
-    end
-  end
 end
