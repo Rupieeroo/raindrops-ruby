@@ -7,16 +7,12 @@ class Factor
     }
 
   def raindrops(int)
-    arr = []
+    str = ''
 
     RAIN.each do |(num, word)|
-      arr << word if int % num == 0
+      str << word if int % num == 0
     end
 
-    if arr.empty?
-      int.to_s
-    else
-      arr.join('').to_s
-    end
+    str.empty? ? int.to_s : str
   end
 end
