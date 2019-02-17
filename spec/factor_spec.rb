@@ -11,8 +11,12 @@ describe '#Factor' do
       expect(@factor.raindrops(4)).to eq('4')
     end
 
-    it 'prints pling if given number is has factor of 7' do
+    it 'prints Plong if given number is has factor of 7' do
       expect(@factor.raindrops(7)).to eq('Plong')
+    end
+
+    it 'prints PlingPlang if given number has factor of 3 and 5' do
+      expect(@factor.raindrops(30)).to eq('PlingPlang')
     end
   end
 
