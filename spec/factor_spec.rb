@@ -10,6 +10,10 @@ describe '#Factor' do
     it 'prints a given number as a string' do
       expect(@factor.raindrops(4)).to eq('4')
     end
+
+    it 'prints pling if given number is 3' do
+      expect(@factor.raindrops(3)).to eq('Pling')
+    end
   end
 
   context '#arr' do
