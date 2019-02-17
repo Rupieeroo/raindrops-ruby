@@ -1,6 +1,6 @@
 class Factor
 
-  def numb(int)
+  def raindrops(int)
     int.to_s
   end
 
