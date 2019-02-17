@@ -1,0 +1,1 @@
+# Raindrops kata in Ruby
