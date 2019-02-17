@@ -1,8 +1,9 @@
 class Factor
 
   def raindrops(int)
-    if int == 3
-      'Pling'
+    factors = factor_find(int)
+    if factors.include?(7)
+      'Plong'
     else
       int.to_s
     end
